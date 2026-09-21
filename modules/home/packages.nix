@@ -63,7 +63,7 @@
 
     (pkgs.writeShellApplication {
       name = "zmk-battery";
-      runtimeInputs = [ (pkgs.python3.withPackages (ps: [ ps.bleak ])) ];
+      runtimeInputs = [ (pkgs.python3.withPackages (ps: [ ps.dbus-next ])) ];
       text = ''exec python "$HOME/.local/bin/zmk-battery.py" "$@"'';
     })
   ];
