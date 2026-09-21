@@ -40,14 +40,11 @@
             if [[ "$1" == "work" ]]; then
               git config core.sshCommand 'ssh -o IdentitiesOnly=yes -o IdentityFile=$HOME/.ssh/work.pub'
               echo "Successfully configured \"Work\" ssh key for current repository"
-            elif [[ "$1" == "hh" ]]; then
-              git config core.sshCommand 'ssh -o IdentitiesOnly=yes -o IdentityFile=$HOME/.ssh/hh_enterprise.pub'
-              echo "Successfully configured \"HH Enterprise\" ssh key for current repository"
             elif [[ "$1" == "personal" ]]; then
               git config core.sshCommand 'ssh -o IdentitiesOnly=yes -o IdentityFile=$HOME/.ssh/personal.pub'
               echo "Successfully configured \"Personal\" ssh key for current repository"
             else
-              echo "Argument required: work | hh | personal"
+              echo "Argument required: work | personal"
             fi
           }
 
