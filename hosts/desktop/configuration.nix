@@ -4,6 +4,7 @@
 
     ../../modules/nixos/boot.nix
     ../../modules/nixos/networking.nix
+    ../../modules/nixos/services.nix
     ../../modules/nixos/locale.nix
     ../../modules/nixos/users.nix
     ../../modules/nixos/nix.nix

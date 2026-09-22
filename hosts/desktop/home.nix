@@ -4,6 +4,7 @@
     ../../modules/home/packages.nix
     ../../modules/home/gtk.nix
     ../../modules/home/zsh.nix
+    ../../modules/home/localsend.nix
     ../../modules/home/dev.nix
   ];
 

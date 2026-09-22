@@ -24,6 +24,7 @@
     kitty
     lazydocker
     lazygit
+    localsend
     lsof
     luarocks
     neovim
@@ -44,6 +45,7 @@
     visualvm
     vscode
     wayscriber
+    whatsapp-electron
     xarchiver
     xdg-utils
     xournalpp
