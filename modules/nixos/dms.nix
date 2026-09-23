@@ -11,9 +11,6 @@
       enable = true;
       restartIfChanged = true;
     };
-    enableDynamicTheming = true;
-    enableAudioWavelength = true;
-    enableCalendarEvents = true;
     plugins = {
       dockerManager.enable = true;
     };
