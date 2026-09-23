@@ -15,7 +15,6 @@
     enableAudioWavelength = true;
     enableCalendarEvents = true;
     plugins = {
-      # dankBatteryAlerts.enable = true;
       dockerManager.enable = true;
     };
   };
