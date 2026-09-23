@@ -16,6 +16,9 @@ let
 
     ".config/bat" = "config/bat";
     ".config/btop" = "config/btop";
+    ".config/Code/User/keybindings.json" = "config/Code/User/keybindings.json";
+    ".config/Code/User/settings.json" = "config/Code/User/settings.json";
+    ".config/DankMaterialShell" = "config/DankMaterialShell";
     ".config/delta" = "config/delta";
     ".config/eza" = "config/eza";
     ".config/kitty" = "config/kitty";
@@ -24,8 +27,6 @@ let
     ".config/nvim" = "config/nvim";
     ".config/starship.toml" = "config/starship.toml";
     ".config/tmux" = "config/tmux";
-    ".config/Code/User/keybindings.json" = "config/Code/User/keybindings.json";
-    ".config/Code/User/settings.json" = "config/Code/User/settings.json";
     ".config/yazi" = "config/yazi";
     ".config/zathura" = "config/zathura";
 
@@ -36,12 +37,7 @@ let
     ".local/bin/zmk-battery.py" = "localbin/zb/zmk-battery.py";
 
     ".config/hypr/hyprland.lua" = "hypr/hyprland.lua";
-    ".config/hypr/dms/binds.lua" = "hypr/dms/binds.lua";
-    ".config/hypr/dms/colors.lua" = "hypr/dms/colors.lua";
-    ".config/hypr/dms/cursor.lua" = "hypr/dms/cursor.lua";
-    ".config/hypr/dms/layout.lua" = "hypr/dms/layout.lua";
-    ".config/hypr/dms/outputs.lua" = "hypr/dms/outputs.lua";
-    ".config/hypr/dms/windowrules.lua" = "hypr/dms/windowrules.lua";
+    ".config/hypr/dms" = "hypr/dms";
   };
 
 in

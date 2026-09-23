@@ -23,7 +23,7 @@
           hl.env("DMS_RUN_GREETER", "1")
           hl.config({ misc = { disable_hyprland_logo = true } })
           hl.monitor({
-            output   = "",
+            output   = "DP-1",
             mode     = "3840x2160@59.940",
             position = "0x0",
             scale    = 1.5,
