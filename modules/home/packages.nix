@@ -20,7 +20,7 @@
     gnome-calculator
     gnome-characters
     gnumake
-    jetbrains-toolbox
+    jetbrains.idea
     kitty
     lazydocker
     lazygit

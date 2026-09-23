@@ -30,8 +30,6 @@
 
         ''
           # functions
-          function idea { ( intellij "$@" & ) > /dev/null 2>&1 }
-
           function tmux-ssh() {
             ssh "$1" -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
           }
