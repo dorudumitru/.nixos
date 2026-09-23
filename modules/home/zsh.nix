@@ -80,7 +80,10 @@
 
       enableCompletion = true;
       autosuggestion.enable = true;
-      syntaxHighlighting.enable = true;
+      fastSyntaxHighlighting = {
+        enable = true;
+        theme = "XDG:catppuccin-macchiato";
+      };
 
       shellAliases = {
         ls = "eza --icons=auto --group-directories-first";

@@ -21,6 +21,7 @@ let
     ".config/DankMaterialShell" = "config/DankMaterialShell";
     ".config/delta" = "config/delta";
     ".config/eza" = "config/eza";
+    ".config/fsh" = "config/fsh";
     ".config/kitty" = "config/kitty";
     ".config/lazydocker" = "config/lazydocker";
     ".config/lazygit" = "config/lazygit";
