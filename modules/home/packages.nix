@@ -23,6 +23,7 @@
     gnome-characters
     gnumake
     jetbrains.idea
+    jq
     kitty
     lazydocker
     lazygit
