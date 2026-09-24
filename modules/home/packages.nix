@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
     _7zip-zstd
     bat
-    bazecor
+    bazecor # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
     bitwarden-desktop
     brave
     btop
