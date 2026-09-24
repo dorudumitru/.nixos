@@ -22,6 +22,7 @@
     gnome-calculator
     gnome-characters
     gnumake
+    icu
     jetbrains.idea
     jq
     kitty
@@ -37,12 +38,9 @@
     rustup
     sqlit-tui
     stremio-linux-shell
-    thunar
-    thunar-archive-plugin
     tealdeer
     tmux
     tree-sitter
-    tumbler
     unzip
     uv
     visualvm
