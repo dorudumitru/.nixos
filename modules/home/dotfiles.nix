@@ -13,6 +13,7 @@ let
 
     ".gitconfig" = "home/.gitconfig";
     ".ideavimrc" = "home/.ideavimrc";
+    ".zshrc.local" = "home/.zshrc.local";
 
     ".config/bat" = "config/bat";
     ".config/btop" = "config/btop";
