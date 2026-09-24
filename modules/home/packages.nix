@@ -5,8 +5,8 @@
     _7zip-zstd
     bat
     bazecor # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
-    bitwarden-desktop
-    brave
+    bitwarden-desktop # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
+    brave # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
     btop
     claude-code
     cliamp
@@ -46,7 +46,7 @@
     visualvm
     vscode
     wayscriber
-    whatsapp-electron
+    whatsapp-electron # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
     xarchiver
     xdg-utils
     xournalpp
