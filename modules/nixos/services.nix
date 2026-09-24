@@ -11,5 +11,6 @@
       enable = true;
       nssmdns4 = true;
     };
+    udev.packages = [ pkgs.bazecor ];
   };
 }

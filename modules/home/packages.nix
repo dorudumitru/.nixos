@@ -4,10 +4,12 @@
   home.packages = with pkgs; [
     _7zip-zstd
     bat
+    bazecor
     bitwarden-desktop
     brave
     btop
     claude-code
+    cliamp
     codex
     delta
     docker

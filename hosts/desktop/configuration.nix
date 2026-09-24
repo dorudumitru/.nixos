@@ -10,6 +10,7 @@
     ../../modules/nixos/nix.nix
     ../../modules/nixos/packages.nix
     ../../modules/nixos/hyprland.nix
+    ../../modules/nixos/bluetooth.nix
     ../../modules/nixos/dms.nix
     ../../modules/nixos/docker.nix
   ];
