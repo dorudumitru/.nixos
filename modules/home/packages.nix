@@ -4,9 +4,9 @@
   home.packages = with pkgs; [
     _7zip-zstd
     bat
-    bazecor # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
-    bitwarden-desktop # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
-    brave # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
+    bazecor # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
+    bitwarden-desktop # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
+    brave # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     btop
     claude-code
     cliamp
@@ -34,6 +34,7 @@
     neovim
     opencode
     pipx
+    posting
     ripgrep
     rustup
     sqlit-tui
@@ -44,9 +45,9 @@
     unzip
     uv
     visualvm
-    vscode
+    vscode # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     wayscriber
-    whatsapp-electron # needs to be started with --ozone-platform=wayland to fix pixelated/blurred font
+    whatsapp-electron # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     xarchiver
     xdg-utils
     xournalpp
