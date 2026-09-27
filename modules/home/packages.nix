@@ -48,6 +48,7 @@
     vscode # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     wayscriber
     whatsapp-electron # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
+    wl-clipboard
     xarchiver
     xdg-utils
     xournalpp
