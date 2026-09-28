@@ -19,5 +19,10 @@
     lilex
   ];
 
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      icu
+    ];
+  };
 }

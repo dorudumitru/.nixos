@@ -22,7 +22,6 @@
     gnome-calculator
     gnome-characters
     gnumake
-    icu
     jetbrains.idea
     jq
     kitty

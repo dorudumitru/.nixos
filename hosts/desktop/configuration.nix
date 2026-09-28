@@ -25,9 +25,10 @@
           hl.config({ misc = { disable_hyprland_logo = true } })
           hl.monitor({
             output   = "DP-1",
-            mode     = "3840x2160@59.940",
+            mode     = "3840x2160@119.880",
             position = "0x0",
             scale    = 1.5,
+            vrr = 1
           })
         '';
       };
