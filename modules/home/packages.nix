@@ -34,6 +34,7 @@
     opencode
     pipx
     posting
+    protobuf
     ripgrep
     rustup
     sqlit-tui
