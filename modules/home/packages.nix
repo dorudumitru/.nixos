@@ -15,6 +15,7 @@
     docker
     dysk
     eza
+    fastfetch
     fd
     gcc
     ghostty
