@@ -14,6 +14,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.symbols-only
+    nerd-fonts.fira-code
     jetbrains-mono
     inter
     lilex

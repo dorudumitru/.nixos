@@ -25,16 +25,18 @@
     gnumake
     jetbrains.idea
     jq
+    k9s
     kitty
+    kubectl
+    kubernetes-helm
     lazydocker
     lazygit
     localsend
     lsof
-    luarocks
     neovim
     opencode
+    openssl
     pipx
-    posting
     protobuf
     ripgrep
     rustup
