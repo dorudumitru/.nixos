@@ -2,8 +2,8 @@
   programs = {
     mise = {
       enable = true;
-      enableMutableConfig = true;
       enableZshIntegration = true;
+      mutableSettings = true;
       globalConfig = {
         settings.all_compile = false;
         tools = {
