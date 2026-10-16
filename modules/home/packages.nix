@@ -11,6 +11,7 @@
     claude-code
     cliamp
     codex
+    codecrafters-cli
     delta
     docker
     dysk
