@@ -38,8 +38,10 @@ let
     ".local/bin/unzip-and-open" = "localbin/uao/unzip-and-open";
     ".local/bin/zmk-battery.py" = "localbin/zb/zmk-battery.py";
 
-    ".config/hypr/hyprland.lua" = "hypr/hyprland.lua";
-    ".config/hypr/dms" = "hypr/dms";
+    ".config/niri/config.kdl" = "niri/config.kdl";
+    ".config/niri/dms" = "niri/dms";
+    # ".config/hypr/hyprland.lua" = "hypr/hyprland.lua";
+    # ".config/hypr/dms" = "hypr/dms";
   };
 
 in

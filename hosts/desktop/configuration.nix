@@ -9,7 +9,8 @@
     ../../modules/nixos/users.nix
     ../../modules/nixos/nix.nix
     ../../modules/nixos/packages.nix
-    ../../modules/nixos/hyprland.nix
+    # ../../modules/nixos/hyprland.nix
+    ../../modules/nixos/niri.nix
     ../../modules/nixos/bluetooth.nix
     ../../modules/nixos/dms.nix
     ../../modules/nixos/docker.nix
@@ -19,19 +20,40 @@
     displayManager.dms-greeter = {
       enable = true;
       compositor = {
-        name = "hyprland";
+        name = "niri";
         customConfig = ''
-          hl.env("DMS_RUN_GREETER", "1")
-          hl.config({ misc = { disable_hyprland_logo = true } })
-          hl.monitor({
-            output   = "DP-1",
-            mode     = "3840x2160@119.880",
-            position = "0x0",
-            scale    = 1.5,
-            vrr = 1
-          })
+          hotkey-overlay {
+            skip-at-startup
+          }
+          environment {
+            DMS_RUN_GREETER "1"
+          }
+          gestures {
+            hot-corners {
+              off
+            }
+          }
+          output "DP-1" {
+            mode "3840x2160@119.880"
+            scale 1.5
+            position x=0 y=0
+          }
         '';
       };
+      # compositor = {
+      #   name = "hyprland";
+      #   customConfig = ''
+      #     hl.env("DMS_RUN_GREETER", "1")
+      #     hl.config({ misc = { disable_hyprland_logo = true } })
+      #     hl.monitor({
+      #       output   = "DP-1",
+      #       mode     = "3840x2160@119.880",
+      #       position = "0x0",
+      #       scale    = 1.5,
+      #       vrr = 1
+      #     })
+      #   '';
+      # };
       configHome = "/home/dorudumitru";
       configFiles = [
         "/home/dorudumitru/.config/DankMaterialShell/settings.json"
