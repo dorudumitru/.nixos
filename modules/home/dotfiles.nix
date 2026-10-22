@@ -34,6 +34,7 @@ let
 
     ".local/bin/find-project" = "localbin/fp/find-project";
     ".local/bin/new-go-project" = "localbin/ngp/new-go-project";
+    ".local/bin/new-java-project" = "localbin/njp/new-java-project";
     ".local/bin/tmux-sessionizer" = "localbin/ts/tmux-sessionizer";
     ".local/bin/unzip-and-open" = "localbin/uao/unzip-and-open";
     ".local/bin/zmk-battery.py" = "localbin/zb/zmk-battery.py";
