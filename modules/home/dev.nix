@@ -8,8 +8,8 @@
         settings.all_compile = false;
         tools = {
           node = "lts";
-          python = "3.14";
-          go = "1.27";
+          python = "3";
+          go = "1";
           java = "temurin-25";
         };
       };

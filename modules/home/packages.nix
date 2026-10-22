@@ -34,6 +34,7 @@
     lazygit
     localsend
     lsof
+    nautilus
     neovim
     opencode
     openssl
@@ -75,5 +76,9 @@
       runtimeInputs = [ (pkgs.python3.withPackages (ps: [ ps.dbus-next ])) ];
       text = ''exec python "$HOME/.local/bin/zmk-battery.py" "$@"'';
     })
+
+    (pkgs.writeShellScriptBin "idea" ''
+      exec ${jetbrains.idea}/intellij-idea/bin/idea "$@" >/dev/null 2>&1 </dev/null &
+    '')
   ];
 }
