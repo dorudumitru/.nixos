@@ -13,8 +13,21 @@
     ../../modules/nixos/niri.nix
     ../../modules/nixos/bluetooth.nix
     ../../modules/nixos/dms.nix
+    # ../../modules/nixos/noctalia.nix
     ../../modules/nixos/docker.nix
   ];
+
+  # services.displayManager.noctalia-greeter = {
+  #   enable = true;
+  #   settings = {
+  #     cursor.size = 24;
+  #     keyboard.layout = "us";
+  #   };
+  #   cursorTheme = {
+  #     package = pkgs.bibata-cursors;
+  #     name = "Bibata-Modern-Classic";
+  #   };
+  # };
 
   services = {
     displayManager.dux-greeter = {

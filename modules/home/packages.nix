@@ -36,7 +36,6 @@
     lsof
     nautilus
     neovim
-    opencode
     openssl
     pipx
     protobuf
