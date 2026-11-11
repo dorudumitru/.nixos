@@ -1,16 +1,32 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  inputs,
+  ...
+}:
 
+let
+  # Get the latest URL: curl -s 'https://data.services.jetbrains.com/products/releases?code=IIU&latest=true' | jq '.IIU[0].downloads.linux.link'
+  # Get the hash: nix store prefetch-file --hash-type sha256 <url>
+  # TODO: comment this override and the two `idea-2026_3` usages below
+  # once nixpkgs unstable ships jetbrains.idea >= 2026.3
+  idea-2026_3 = pkgs.jetbrains.idea.overrideAttrs (_: rec {
+    version = "2026.3";
+    src = pkgs.fetchurl {
+      url = "https://download.jetbrains.com/idea/idea-${version}.tar.gz";
+      hash = "sha256-alP/cfSgat1Ml+3E7+hsgxGf+C5bXp8dti/JWZW9ayU=";
+    };
+  });
+in
 {
   home.packages = with pkgs; [
     _7zip-zstd
     bat
     bazecor # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     bitwarden-desktop # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
-    brave # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     btop
     claude-code
     cliamp
-    codex
+    # codex
     codecrafters-cli
     delta
     docker
@@ -24,7 +40,7 @@
     gnome-calculator
     gnome-characters
     gnumake
-    jetbrains.idea
+    idea-2026_3
     jq
     k9s
     kitty
@@ -61,6 +77,9 @@
     zathura
     zip
 
+    # not in nixpkgs yet (PR nixpkgs#363992 still open)
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+
     (pkgs.writeShellApplication {
       name = "ns";
       runtimeInputs = with pkgs; [
@@ -77,7 +96,7 @@
     })
 
     (pkgs.writeShellScriptBin "idea" ''
-      exec ${jetbrains.idea}/intellij-idea/bin/idea "$@" >/dev/null 2>&1 </dev/null &
+      exec ${idea-2026_3}/intellij-idea/bin/idea "$@" >/dev/null 2>&1 </dev/null &
     '')
   ];
 }

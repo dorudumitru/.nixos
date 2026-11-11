@@ -13,6 +13,16 @@
       url = "github:duxlabs-dev/dux-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    oniri = {
+      url = "github:Antiz96/oniri";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -47,6 +57,7 @@
                 useUserPackages = true;
                 users.dorudumitru = import ./hosts/${hostname}/home.nix;
                 backupFileExtension = "backup";
+                extraSpecialArgs = { inherit inputs; };
               };
             }
           ];
