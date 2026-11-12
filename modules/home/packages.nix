@@ -26,7 +26,7 @@ in
     btop
     claude-code
     cliamp
-    # codex
+    codex
     codecrafters-cli
     delta
     docker
@@ -40,6 +40,7 @@ in
     gnome-calculator
     gnome-characters
     gnumake
+    herdr-desktop
     idea-2026_3
     jq
     k9s
@@ -59,6 +60,7 @@ in
     rustup
     sqlit-tui
     stremio-linux-shell
+    t3code
     tealdeer
     tmux
     tree-sitter
