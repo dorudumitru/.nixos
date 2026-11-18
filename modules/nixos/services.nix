@@ -17,9 +17,4 @@
       nssmdns4 = true;
     };
   };
-
-  programs.thunar = {
-    enable = true;
-    plugins = with pkgs; [ thunar-archive-plugin ];
-  };
 }

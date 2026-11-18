@@ -40,6 +40,7 @@ in
     gnome-calculator
     gnome-characters
     gnumake
+    handy
     herdr-desktop
     idea-2026_3
     jq
@@ -71,6 +72,7 @@ in
     wayscriber
     whatsapp-electron # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     wl-clipboard
+    wtype
     xarchiver
     xdg-utils
     xournalpp
@@ -78,6 +80,7 @@ in
     yubioath-flutter
     zathura
     zip
+    zmk-studio
 
     # not in nixpkgs yet (PR nixpkgs#363992 still open)
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
