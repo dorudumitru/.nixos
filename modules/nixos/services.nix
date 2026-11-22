@@ -2,6 +2,11 @@
 
 {
   services = {
+    tailscale = {
+      enable = true;
+      openFirewall = true;
+    };
+
     udisks2.enable = true;
     udev.packages = [ pkgs.bazecor ];
     gvfs.enable = true;

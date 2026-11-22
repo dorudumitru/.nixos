@@ -23,6 +23,7 @@
     bat
     bazecor # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
     bitwarden-desktop # needs to be started with --enable-features=UseOzonePlatform --ozone-platform=wayland to fix pixelated/blurred font
+    brave
     btop
     claude-code
     cliamp
@@ -41,6 +42,8 @@
     gnome-characters
     gnumake
     handy
+    herdr
+    herdr-core
     herdr-desktop
     intellij-idea
     jq
@@ -54,6 +57,7 @@
     lsof
     nautilus
     neovim
+    opencode
     openssl
     pipx
     protobuf
