@@ -65,7 +65,6 @@
     rustup
     sqlit-tui
     stremio-linux-shell
-    t3code
     tealdeer
     tmux
     tree-sitter
